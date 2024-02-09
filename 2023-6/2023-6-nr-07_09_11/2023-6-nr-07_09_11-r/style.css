@@ -1,0 +1,50 @@
+* {
+	font-family: Tahoma;
+	margin: 0;
+}
+
+main {
+	display: flex;
+}
+
+header, footer {
+	color: #fff;
+	text-align: center;
+	background: SaddleBrown;
+	padding: 3px;
+}
+
+#pleft, #pright {
+	height: 400px;
+	width: 40%;
+	background: Tan;
+}
+
+#pctr {
+	background: Wheat;
+	height: 400px;
+	width: 20%;
+	float: left;
+}
+
+h1, h4, h6, p {
+	margin: 20px 0px 20px 0px;
+}
+
+input {
+	margin: 5px;
+}
+
+h4 {
+	text-align: center;
+}
+
+li:hover {
+	background-color: Sienna;
+	color: #fff;
+}
+
+img {
+	margin-right: 20px;
+	float: right;
+}

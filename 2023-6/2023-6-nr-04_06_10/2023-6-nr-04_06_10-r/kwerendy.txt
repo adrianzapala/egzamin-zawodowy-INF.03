@@ -1,0 +1,31 @@
+CREATE DATABASE biblioteka;
+USE biblioteka;
+
+-- 1)
+SELECT imie, nazwisko
+FROM autorzy
+ORDER BY nazwisko;
+
+-- 2)
+INSERT INTO czytelnicy (imie, nazwisko, kod)
+VALUES ('Ewelina', 'Kowalska' , '145321');
+
+-- 3)
+-- Nierelacyjnie
+SELECT * FROM kategorie;
+SELECT * FROM ksiazki
+WHERE id_kategoria = 2;
+
+-- Relacyjnie
+SELECT k.tytul
+FROM ksiazki AS k INNER JOIN kategorie AS kg
+ON k.id_kategoria = kg.id
+WHERE kg.nazwa = 'dramat';
+
+-- 4)
+SELECT k.tytul 
+FROM ksiazki AS k INNER JOIN wypozyczenia AS w
+ON k.id = w.id_ksiazka
+WHERE w.id_czytelnik = 2;
+
+

@@ -1,0 +1,51 @@
+* {
+	font-family: Garamond;
+	text-align: center;
+	margin: 0;
+}
+
+main {
+	display: flex;
+}
+
+header, footer {
+	color: #fff;
+	height: 70px;
+	font-size: 150%;
+	background: #8C7B75;
+}
+
+#pleft, #pright {
+	height: 400px;
+	width: 35%;
+	background: #BCAAA4;
+}
+
+#pctr {
+	background: #EFDCD5;
+	height: 400px;
+	width: 30%;
+}
+
+#price {
+	margin-top: 100px;
+	border: 1px solid #8C7B75;
+}
+
+h2, p, img, form, button {
+	margin-top: 20px;
+}
+
+ul {
+	list-style-type: lower-alpha;
+}
+
+li {
+	text-align: left;
+}
+
+img {
+	border: 1px solid #8C7B75;
+	border-radius: 10%;
+	padding: 5px;
+}

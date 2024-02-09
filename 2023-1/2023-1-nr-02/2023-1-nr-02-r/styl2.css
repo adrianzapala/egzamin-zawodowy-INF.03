@@ -1,0 +1,46 @@
+body {
+	margin: 0;
+	background: Lavender;
+}
+
+* {
+	font-family: Garamond;
+	text-align: center;
+}
+
+main {
+	display: flex;
+}
+
+header, footer {
+	color: #fff;
+	padding: 10px;
+	background: #AF8EB5;
+}
+
+#pleft, #pctr, #pright {
+	height: 500px;
+	width: 30%;
+	background: #E1BEE7;
+	padding-top: 40px;
+	margin: 15px;
+	box-shadow: 10px 10px 10px DimGray;
+}
+
+a {
+	color: Indigo;
+	font-size: 150%;
+	font-weight: bold;
+	padding: 10px;
+}
+
+a:hover {
+	background: Indigo;
+	color: #fff;
+}
+
+img, table {
+	border: 1px solid;
+	width: 80%;
+	margin: 40px auto 40px auto;
+}

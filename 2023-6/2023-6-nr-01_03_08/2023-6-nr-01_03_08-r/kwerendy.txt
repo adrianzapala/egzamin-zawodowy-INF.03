@@ -1,0 +1,18 @@
+CREATE DATABASE sklep;
+USE sklep;
+
+-- 1)
+SELECT nazwa FROM towary WHERE promocja = 1;
+
+-- 2)
+SELECT cena FROM towary WHERE nazwa = 'Markery 4 szt.';
+
+-- 3)
+SELECT d.nazwa, COUNT(t.idDostawcy) AS 'liczba_towarow' 
+FROM dostawcy AS d INNER JOIN towary AS t
+ON d.id = t.idDostawcy
+GROUP BY idDostawcy;
+
+-- 4)
+ALTER TABLE dostawcy
+ADD informacje TEXT;

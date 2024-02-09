@@ -1,0 +1,70 @@
+body {
+	margin: 0;
+}
+
+* {
+	font-family: Helvetica;
+}
+
+main {
+	display: flex;
+}
+
+header, footer {
+	color: #fff;
+	padding: 5px;
+	background: #B3BC6D;
+	text-align: center;
+}
+
+#data {
+	color: Olive;
+	padding: 10px 150px 10px 150px;
+	background: #FFFFCE;
+}
+
+#pleft, #pright {
+	height: 450px;
+	width: 25%;
+	background: #E6EE9C;
+	text-align: center;
+}
+
+#pctr {
+	height: 450px;
+	width: 50%;
+	background: #FFFFCE;
+}
+
+table {
+	border: 1px solid Olive;
+	margin: auto;
+	width: 70%;
+}
+
+h2 {
+	text-align: center;
+}
+
+h2::first-letter {
+	font-size: 150%;
+	color: Olive;
+}
+
+a:hover {
+	background: Indigo;
+	color: #fff;
+}
+
+img {
+	height: 100px;
+	padding: 7px;
+}
+
+img:hover {
+	background: #B3BC6D;
+}
+
+p {
+	margin: 10px;
+}

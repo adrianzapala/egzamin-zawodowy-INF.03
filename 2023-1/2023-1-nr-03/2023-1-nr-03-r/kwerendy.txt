@@ -1,0 +1,26 @@
+CREATE DATABASE kwiaciarnia;
+USE kwiaciarnia;
+
+-- 1)
+SELECT nazwa, ulica
+FROM kwiaciarnie
+WHERE miasto = 'Malbork';
+
+-- 2)
+SELECT id_kwiaciarni, COUNT(id_zam)
+FROM zamowienia
+GROUP BY id_kwiaciarni;
+
+-- 3)
+SELECT k.nazwa, k.miasto, z.kwiaty
+FROM kwiaciarnie AS k INNER JOIN zamowienia AS z
+ON k.id_kwiaciarni = z.id_kwiaciarni
+WHERE z.data = '2017-01-07';
+
+-- 4)
+CREATE TABLE klienci
+(
+id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+imie VARCHAR(15),
+nazwisko VARCHAR(15),
+rabat INT UNSIGNED);

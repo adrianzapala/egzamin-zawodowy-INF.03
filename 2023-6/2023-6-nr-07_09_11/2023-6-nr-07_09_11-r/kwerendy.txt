@@ -1,0 +1,23 @@
+CREATE DATABASE biblioteka;
+USE biblioteka;
+
+-- 1)
+INSERT INTO czytelnicy (imie, nazwisko, kod)
+VALUES ('Ewelina', 'Romanowska' , '56677');
+
+-- 2)
+SELECT imie, nazwisko 
+FROM czytelnicy 
+ORDER BY nazwisko;
+
+-- 3)
+SELECT k.tytul 
+FROM ksiazki AS k INNER JOIN autorzy AS a
+ON k.id_autor = a.id
+WHERE a.nazwisko = 'Sienkiewicz';
+
+-- 4)
+SELECT a.nazwisko, COUNT(k.id_autor) AS 'ile_tytulow' 
+FROM autorzy AS a INNER JOIN ksiazki AS k
+ON a.id = k.id_autor
+GROUP BY id_autor;

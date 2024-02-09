@@ -1,0 +1,51 @@
+body {
+	margin: 0;
+}
+
+* {
+	font-family: Georgia;
+}
+
+main {
+	display: flex;
+}
+
+header, footer {
+	color: #fff;
+	padding: 10px;
+	background: #C75B39;
+	text-align: center;
+}
+
+#pleft {
+	height: 500px;
+	width: 25%;
+	background: #FF8A65;
+	padding-top: 50px;
+}
+
+#pright {
+	height: 500px;
+	width: 75%;
+	background: Snow;
+	padding-top: 50px;
+	text-align: center;
+}
+
+li {
+	margin: 5px;
+}
+
+li::marker {
+	color: Snow;
+}
+
+img {
+	width: 25%;
+	margin: 10px;
+	box-shadow: 15px 15px 10px DimGray;
+}
+
+h3 {
+	margin: 50px 0px 50px 0px;
+}

@@ -1,0 +1,51 @@
+* {
+	font-family: Georgia;
+	text-align: center;
+	margin: 0;
+}
+
+main {
+	display: flex;
+}
+
+header, footer {
+	color: #fff;
+	height: 80px;
+	font-size: 120%;
+	background: #4BA3C7;
+}
+
+#pleft, #pright {
+	height: 400px;
+	width: 25%;
+	background: #EFEFEF;
+}
+
+#pctr {
+	background: #90CAF9;
+	height: 400px;
+	width: 50%;
+}
+
+table {
+	margin-left: 10px;
+	width: 90%;
+	border: 1px solid #90CAF9;
+}
+
+tr:hover {
+	color: #90CAF9;
+}
+
+table td { 
+	padding: 5px;
+	border: 1px solid #90CAF9;
+}
+
+input {
+	margin: 15px 0px 15px 0px;
+}
+
+h2, p, img, form {
+	margin-top: 20px;
+}

@@ -1,0 +1,52 @@
+body {
+	margin: 0;
+}
+
+* {
+	font-family: Tahoma;
+}
+
+header {
+	display: flex;
+	color: #fff;
+	background: #7DA453;
+	height: 120px;
+}
+
+#pleft, #pctr {
+	width: 40%;
+}
+
+#pright {
+	width: 20%;
+}
+
+div {
+	background: #AED581;
+	width: 200px;
+	height: 100px;
+	margin: 7px;
+	border: 1px solid #7DA453;
+	float: left;
+}
+
+div:hover {
+	color: #fff;
+	background: #7DA453;
+}
+
+footer {
+	background: #7DA453;
+	color: #fff;
+	padding: 5px;
+	float: left;
+	width: 100%;
+}
+
+h5 {
+	text-align: center;
+}
+
+form {
+	padding-top: 50px;
+}
