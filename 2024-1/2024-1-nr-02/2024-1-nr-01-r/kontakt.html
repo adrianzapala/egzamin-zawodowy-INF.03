@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+	<meta charset="UTF-8">
+	<title>Komputery</title>
+	<link rel="icon" type="image/x-icon" href="favicon.png">
+	<style>
+		@import url('styl.css');
+	</style>
+</head>
+<body>
+	<main>
+	<header>
+		<img src="animacja.gif" alt="Pogotowie komputerowe">
+	</header>
+	<nav>
+		<a href="index.html">Strona Główna</a>
+		<a href="kontakt.html">Kontakt</a>
+	</nav>
+	<div>
+		<section id="pleft">
+		</section>
+		<section id="pctr">
+			<h2>Kontakt</h2>
+			<form>
+			<table>
+			<tr><td>Imię:</td><td><input type="text" id="fname"></td></tr>
+			<tr><td>Nazwisko:</td><td><input type="text" id="lname"></td></tr>
+			<tr><td>E-mail:</td><td><input type="email" id="email"></td></tr>
+			<tr><td>Zgłoszenie:</td><td>
+				<select id="services">
+					<option value="naprawa komputerów">naprawa komputerów</option>
+					<option value="odzyskiwanie danych">odzyskiwanie danych</option>
+					<option value="wirusy">wirusy</option>
+					<option value="konfiguracja LAN">konfiguracja LAN</option>
+				</select>
+			</td></tr>
+			<tr><td></td><td><input type="checkbox" id="conditions" checked> <label>Wyślij kopię wiadomości</label></td></tr>
+			<tr><td></td><td><input type="reset" value="Czyść"> <input type="submit" value="Wyślij" onclick="show()"></td></tr>
+			</table>
+			</form>
+			<hr>
+			<p id="result"></p>
+			<script type="text/javascript">
+				function show() 
+				{
+					var first_name = document.getElementById("fname").value;
+					var last_name = document.getElementById("lname").value;
+					var email = document.getElementById("email").value;
+					var option_services = document.getElementById("services").value;
+					
+					if (option_services)
+						document.getElementById("result").innerHTML = "<span style='color: Navy;'>" + first_name + " " + last_name + "<br>" + email + "<br>Usługa: " + 
+						option_services + "</span>";
+				}
+			</script>
+		</section>
+		<section id="pright">
+		</section>
+	</div>
+	<footer>
+		Autor: <i>12325327</i>
+	</footer>
+	</main>
+</body>
+</html>

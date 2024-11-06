@@ -42,5 +42,6 @@ gdzie: YYYY - rok; M - miesiąc (1 - sesja zimowa, 6 - sesja letnia); xx, yy, zz
 12 numerów zadań (arkuszy).
 
 - [2024-1-nr-01](/2024-1/2024-1-nr-01) (JS, Usługi informatyczne);
+- [2024-1-nr-02](/2024-1/2024-1-nr-02) (JS, Pogotowie komputerowe);
 
 ### CZERWIEC 2024 (*in statu nascendi*)
