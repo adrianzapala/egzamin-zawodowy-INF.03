@@ -37,4 +37,10 @@ gdzie: YYYY - rok; M - miesiąc (1 - sesja zimowa, 6 - sesja letnia); xx, yy, zz
 - [2023-6-nr-04_06_10](/2023-6/2023-6-nr-04_06_10) (PHP, Biblioteka w Książkowicach Wielkich);
 - [2023-6-nr-07_09_11](/2023-6/2023-6-nr-07_09_11) (PHP, Biblioteka w Książkowicach Małych).
 
-### STYCZEŃ 2024 (*in statu nascendi*)
+### STYCZEŃ 2024 ([2024-1](/2024-1))
+
+12 numerów zadań (arkuszy).
+
+- [2024-1-nr-01](/2024-1/2024-1-nr-01) (JS, Usługi informatyczne);
+
+### CZERWIEC 2024 (*in statu nascendi*)

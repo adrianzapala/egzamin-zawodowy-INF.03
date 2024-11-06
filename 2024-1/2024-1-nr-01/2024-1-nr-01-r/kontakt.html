@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+	<meta charset="UTF-8">
+	<title>Firma IT</title>
+	<link rel="icon" type="image/x-icon" href="logo.png">
+	<style>
+		@import url('styl.css');
+	</style>
+</head>
+<body>
+	<main>
+	<header>
+		<section id="logo">
+			<img src="logo.png" alt="firma it">
+		</section>
+		<section id="menu">
+			<nav>
+				<a href="index.html">Strona główna</a>
+				<a href="uslugi.html">Usługi</a>
+				<a href="kontakt.html">Kontakt</a>
+			</nav>
+		</section>
+	</header>
+	<section id="one">
+		<img src="animacja.gif" alt="Usługi informatyczne">
+	</section>
+	<section id="two">
+		<h2>Kontakt</h2>
+		<table>
+			<tr><td>Imię:</td><td><input type="text" id="fname"></td></tr>
+			<tr><td>Nazwisko:</td><td><input type="text" id="lname"></td></tr>
+			<tr><td>E-mail:</td><td><input type="email" id="email"></td></tr>
+			<tr><td>Zgłoszenie:</td><td><textarea rows="10" cols="40" id="content"></textarea></td></tr>
+			<tr><td></td><td><input type="checkbox" id="conditions"> <label>Zapoznałam/em się z regulaminem</label></td></tr>
+			<tr><td></td><td><input type="reset" value="Resetuj"> <input type="submit" value="Prześlij" onclick="show()"></td></tr>
+		</table>
+		<hr>
+		<p id="result"></p>
+			<script type="text/javascript">
+				function show() 
+				{
+					var first_name = document.getElementById("fname").value;
+					var last_name = document.getElementById("lname").value;
+					var email = document.getElementById("email").value;
+					var text_content = document.getElementById("content").value;
+					var is_checked = document.getElementById("conditions").checked;
+					
+					if (!is_checked)
+						document.getElementById("result").innerHTML = "<span style='color: red;'>Musisz zapoznać się z regulaminem</span>";
+					else
+						document.getElementById("result").innerHTML = "<span style='color: Navy;'><span style='text-transform: uppercase;'>" + first_name + " " + last_name + "</span><br>Treść Twojej sprawy:" + text_content + "</span>";
+				}
+			</script>
+	</section>
+	<footer>
+		Autor strony: <strong>12325327</strong>
+	</footer>
+	</main>
+</body>
+</html>
