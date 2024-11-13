@@ -3,8 +3,7 @@
 W niniejszym repozytorium znajdują się arkusze, wraz z załącznikami i rozwiązaniami dotyczącymi egzaminu
 zawodowego w części *praktycznej* kwalifikacji INF.03 dla kierunku technik informatyk.
 
-W miarę upływu czasu pojawiać się będą nowe katalogi. W przypadku języka PHP prezentuję rozwiązania
-zarówno w wersji proceduralnej jak i obiektowej (ta druga wersja zawiera w nazwie pliku sufiks *oop*). Foldery nie zawierają zrzutów ekranu
+W miarę upływu czasu pojawiać się będą nowe katalogi. W przypadku języka PHP kilka pierwszych rozwiązań prezentuję zarówno w wersji proceduralnej jak i obiektowej (ta druga wersja zawiera w nazwie pliku sufiks *oop*). Foldery nie zawierają zrzutów ekranu
 (te wiadomo, jak wykonywać).
 
 Struktura katalogów:
@@ -41,7 +40,8 @@ gdzie: YYYY - rok; M - miesiąc (1 - sesja zimowa, 6 - sesja letnia); xx, yy, zz
 
 12 numerów zadań (arkuszy).
 
-- [2024-1-nr-01](/2024-1/2024-1-nr-01) (JS, Usługi informatyczne);
+- [2024-1-nr-01_03](/2024-1/2024-1-nr-01_03) (JS, Usługi informatyczne);
 - [2024-1-nr-02](/2024-1/2024-1-nr-02) (JS, Pogotowie komputerowe);
+- [2024-1-nr-04](/2024-1/2024-1-nr-04) (PHP, Terminarz);
 
 ### CZERWIEC 2024 (*in statu nascendi*)

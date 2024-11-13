@@ -1,0 +1,53 @@
+body {
+	margin: 0;
+}
+
+* {
+	font-family: Verdana;
+}
+
+header {
+	display: flex;
+}
+
+#pleft, #pright {
+	background: #6F79A8;
+	color: #fff;
+	height: 140px;
+}
+
+#pleft {
+	width: 30%;
+}
+
+#pright {
+	width: 70%;
+}
+
+div {
+	background: #9FA8DA;
+	width: 160px;
+	height: 85px;
+	margin: 5px;
+	border: 1px solid #6F79A8;
+	float: left;
+	overflow: hidden;
+}
+
+div:hover {
+	color: #fff;
+	background: #6F79A8;
+}
+
+footer {
+	background: #6F79A8;
+	color: #fff;
+	padding: 5px;
+	float: left;
+	text-align: right;
+	width: 100%;
+}
+
+h6 {
+	text-align: center;
+}
