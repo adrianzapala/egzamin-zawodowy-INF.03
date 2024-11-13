@@ -36,7 +36,7 @@
 				</select>
 			</td></tr>
 			<tr><td></td><td><input type="checkbox" id="conditions" checked> <label>Wyślij kopię wiadomości</label></td></tr>
-			<tr><td></td><td><input type="reset" value="Czyść"> <input type="submit" value="Wyślij" onclick="show()"></td></tr>
+			<tr><td></td><td><input type="reset" value="Czyść"> <input type="button" value="Wyślij" onclick="show()"></td></tr>
 			</table>
 			</form>
 			<hr>
@@ -49,9 +49,7 @@
 					var email = document.getElementById("email").value;
 					var option_services = document.getElementById("services").value;
 					
-					if (option_services)
-						document.getElementById("result").innerHTML = "<span style='color: Navy;'>" + first_name + " " + last_name + "<br>" + email + "<br>Usługa: " + 
-						option_services + "</span>";
+					document.getElementById("result").innerHTML = "<span style='color: Navy;'>" + first_name + " " + last_name + "<br>" + email + "<br>Usługa: " + option_services + "</span>";
 				}
 			</script>
 		</section>

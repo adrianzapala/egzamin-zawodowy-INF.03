@@ -34,7 +34,7 @@
 			<tr><td>E-mail:</td><td><input type="email" id="email"></td></tr>
 			<tr><td>Zgłoszenie:</td><td><textarea rows="10" cols="40" id="content"></textarea></td></tr>
 			<tr><td></td><td><input type="checkbox" id="conditions"> <label>Zapoznałam/em się z regulaminem</label></td></tr>
-			<tr><td></td><td><input type="reset" value="Resetuj"> <input type="submit" value="Prześlij" onclick="show()"></td></tr>
+			<tr><td></td><td><input type="reset" value="Resetuj"> <input type="button" value="Prześlij" onclick="show()"></td></tr>
 		</table>
 		</form>
 		<hr>
@@ -44,7 +44,6 @@
 				{
 					var first_name = document.getElementById("fname").value;
 					var last_name = document.getElementById("lname").value;
-					var email = document.getElementById("email").value;
 					var text_content = document.getElementById("content").value;
 					var is_checked = document.getElementById("conditions").checked;
 					
