@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+	<meta charset="UTF-8">
+	<title>Salon kosmetyczny</title>
+	<link rel="icon" type="image/x-icon" href="favicon.png">
+	<style>
+		@import url('styl7.css');
+	</style>
+</head>
+<body>
+	<main>
+		<div id="left">
+			<section id="pleft1">
+				<h2>Nasza oferta</h2>
+				<ol>
+					<li><a href="twarz.html">Oczyszczanie twarzy</a>
+						<ul>
+							<li>Peeling</li>
+							<li>Maska</li>
+						</ul>
+					</li>
+					<li>Masaż</li>
+					<li>Makijaż</li>
+				</ol>
+				<a class="mainpage" href="index.html">Strona główna</a>
+			</section>
+			<section id="pleft2">
+				<img src="obraz1.jpg" alt="Personel">
+			</section>
+		</div>
+		<div id="right">
+			<section id="pright1">
+				<h1>Usługi kosmetyczne</h1>
+			</section>
+			<section id="pright2">
+				<h3>Kalkulator ceny wizyty</h3>
+				<input type="checkbox" id="peeling"><label>Peeling</label><br>
+				<input type="checkbox" id="maska"><label>Maska</label><br>
+				<input type="checkbox" id="masaz"><label>Masaż twarzy</label><br>
+				<input type="checkbox" id="makijaz"><label>Makijaż</label><br>
+				<input type="button" value="Oblicz cenę" onclick="calc()">
+				<p id="result"></p>
+				<script type="text/javascript">
+					function calc() 
+					{
+						sum = 0;
+						peeling = document.getElementById('peeling');
+						maska = document.getElementById('maska');
+						masaz = document.getElementById('masaz');
+						makijaz = document.getElementById('makijaz');
+						
+						if (peeling.checked)
+							sum += 45;
+						if (maska.checked)
+							sum += 30;
+						if (masaz.checked)
+							sum += 20;
+						if (makijaz.checked)
+							sum += 50;
+								
+						document.getElementById("result").innerHTML = "Cena zabiegów: " + sum;
+					}
+			</script>
+			</section>
+		</div>
+	</main>
+	<footer>
+		<p>Autor: 12325327</p>
+	</footer>
+</body>
+</html>
