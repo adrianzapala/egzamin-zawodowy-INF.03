@@ -43,5 +43,6 @@ gdzie: YYYY - rok; M - miesiąc (1 - sesja zimowa, 6 - sesja letnia); xx, yy, zz
 - [2024-1-nr-01_03](/2024-1/2024-1-nr-01_03) (JS, Usługi informatyczne);
 - [2024-1-nr-02](/2024-1/2024-1-nr-02) (JS, Pogotowie komputerowe);
 - [2024-1-nr-04](/2024-1/2024-1-nr-04) (PHP, Terminarz);
+- [2024-1-nr-05](/2024-1/2024-1-nr-05) (JS, Usługi kosmetyczne);
 
 ### CZERWIEC 2024 (*in statu nascendi*)
