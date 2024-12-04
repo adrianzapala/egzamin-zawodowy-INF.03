@@ -1,20 +1,21 @@
-CREATE DATABASE biuro;
-USE biuro;
+CREATE DATABASE podroze;
+USE podroze;
 
 -- 1)
-SELECT id, dataWyjazdu, cel, cena
-FROM wycieczki;
-
--- 2)
 SELECT nazwaPliku, podpis
 FROM zdjecia
-ORDER BY podpis DESC;
+ORDER BY podpis;
+
+-- 2)
+SELECT cel, dataWyjazdu
+FROM wycieczki
+WHERE dostepna = FALSE;
 
 -- 3)
 SELECT w.cel, w.cena, z.podpis
 FROM wycieczki AS w INNER JOIN zdjecia AS z
 ON w.zdjecia_id= z.id
-WHERE  w.cena > 1200;
+WHERE  w.cena > 1300;
 
 -- 4)
-ALTER TABLE wycieczki ADD liczbaDni INT AFTER dataWyjazdu;
+DROP TABLE uzytkownik;

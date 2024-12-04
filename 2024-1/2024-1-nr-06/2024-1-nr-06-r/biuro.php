@@ -2,45 +2,32 @@
 <html lang="pl">
 <head>
 	<meta charset="UTF-8">
-	<title>Wycieczki po Europie</title>
-	<link rel="stylesheet" href="styl4.css">
+	<title>Poznaj Europę</title>
+	<link rel="stylesheet" href="styl9.css">
 </head>
 <body>
 <header>
-	<h1>BIURO TURYSTYCZNE</h1>
+	<h1>BIURO PODRÓŻY</h1>
 </header>
-<section id="data">
-	<h3>Wycieczki, na które są wolne miejsca</h3>
-	<?php
-		require_once 'connect.php';
-		$conn = mysqli_connect($host, $user, $pwd, $db);
-
-		$q1 = "SELECT id, dataWyjazdu, cel, cena FROM wycieczki;";
-		$res1 = mysqli_query($conn, $q1);
-		$rows = mysqli_num_rows($res1);
-
-		echo "<ul>";
-		for ($i = 0; $i < $rows; ++$i)
-		{
-			$row = mysqli_fetch_array($res1, MYSQLI_NUM);
-			echo "<li>$row[0]. dnia $row[1] jedziemy do $row[2], cena: $row[3]</li>";
-		}
-		echo "</ul>";
-	?>
-</section>
 <main>
 	<section id="pleft">
-		<h2>Bestselery</h2>
+		<h2>Promocje</h2>
 		<table>
-			<tr><td>Wenecja</td><td>kwiecień</td></tr>
-			<tr><td>Londyn</td><td>lipiec</td></tr>
-			<tr><td>Rzym</td><td>wrzesień</td></tr>
+			<tr><td>Warszawa</td><td>od 600 zł</td></tr>
+			<tr><td>Wenecja</td><td>od 1200 zł</td></tr>
+			<tr><td>Paryż</td><td>od 1200 zł</td></tr>
 		</table>
 	</section>
 	<section id="pctr">
-		<h2>Nasze zdjęcia</h2>
+		<h2>W tym roku jedziemy do...</h2>
 		<?php
-			$q2 = "SELECT nazwaPliku, podpis FROM zdjecia ORDER BY podpis DESC;";
+			$host = 'localhost';
+			$user = 'root';
+			$pwd = '';
+			$db = 'podroze';
+			$conn = mysqli_connect($host, $user, $pwd, $db, 3307);
+		
+			$q2 = "SELECT nazwaPliku, podpis FROM zdjecia ORDER BY podpis;";
 			$res2 = mysqli_query($conn, $q2);
 			$rows = mysqli_num_rows($res2);
 
@@ -49,16 +36,32 @@
 				$row = mysqli_fetch_array($res2, MYSQLI_NUM);
 				echo "<img src=$row[0] alt=$row[1]>";
 			}
-
-			mysqli_close($conn);
 		?>
 	</section>
 	<section id="pright">
-		<h2>Skontaktuj się</h2>
-		<a href="mailto:turysta@wycieczki.pl">napisz do nas</a>
-		<p>telefon: 111222333</p>
+		<h2>Kontakt</h2>
+		<a href="mailto:biuro@wycieczki.pl">napisz do nas</a>
+		<p>telefon: 444555666</p>
 	</section>
 </main>
+<section id="data">
+	<h3>W poprzednich latach byliśmy...</h3>
+	<?php
+		$q1 = "SELECT cel, dataWyjazdu FROM wycieczki WHERE dostepna = FALSE;";
+		$res1 = mysqli_query($conn, $q1);
+		$rows = mysqli_num_rows($res1);
+
+		echo "<ol>";
+		for ($i = 0; $i < $rows; ++$i)
+		{
+			$row = mysqli_fetch_array($res1, MYSQLI_NUM);
+			echo "<li>Dnia $row[1]. pojechaliśmy do $row[0]</li>";
+		}
+		echo "</ol>";
+		
+		mysqli_close($conn);
+	?>
+</section>
 <footer>
 	<p>Stronę wykonał: 00000000000</p>
 </footer>

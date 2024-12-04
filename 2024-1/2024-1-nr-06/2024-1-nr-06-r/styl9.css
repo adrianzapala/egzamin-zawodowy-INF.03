@@ -3,7 +3,8 @@ body {
 }
 
 * {
-	font-family: Helvetica;
+	font-family: Georgia;
+	text-align: center;
 }
 
 main {
@@ -12,59 +13,52 @@ main {
 
 header, footer {
 	color: #fff;
-	padding: 5px;
-	background: #B3BC6D;
-	text-align: center;
+	padding: 7px;
+	background: #BA6B6C;
 }
 
 #data {
-	color: Olive;
-	padding: 10px 150px 10px 150px;
-	background: #FFFFCE;
+	background: MistyRose;
+	margin: 0px;
 }
 
 #pleft, #pright {
-	height: 450px;
-	width: 25%;
-	background: #E6EE9C;
-	text-align: center;
+	height: 500px;
+	width: 20%;
+	background: #EF9A9A;
 }
 
 #pctr {
-	height: 450px;
-	width: 50%;
-	background: #FFFFCE;
+	height: 500px;
+	width: 60%;
+	background: MistyRose;
 }
 
 table {
-	border: 1px solid Olive;
+	border: 1px solid Maroon;
 	margin: auto;
-	width: 70%;
-}
-
-h2 {
-	text-align: center;
+	width: 80%;
 }
 
 h2::first-letter {
-	font-size: 150%;
-	color: Olive;
+	font-size: 170%;
+	color: Maroon;
 }
 
-a:hover {
-	background: Indigo;
-	color: #fff;
+h3 {
+	margin: 0px;
 }
 
 img {
-	height: 100px;
-	padding: 7px;
+	height: 120px;
+	margin: 7px;
+	box-shadow: 7px 7px 7px DimGray;
 }
 
-img:hover {
-	background: #B3BC6D;
+ol {
+	list-style-type: upper-roman;
 }
 
-p {
-	margin: 10px;
+li {
+	text-align: left;
 }
