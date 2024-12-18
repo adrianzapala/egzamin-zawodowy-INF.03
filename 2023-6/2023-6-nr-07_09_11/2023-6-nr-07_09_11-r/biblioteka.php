@@ -25,6 +25,10 @@
 			if (isset($_POST['accept'])) 
 			{
 				$q1 = "INSERT INTO czytelnicy (imie, nazwisko, kod) VALUES ('" . $_POST['first_name'] . "', '" . $_POST['last_name'] . "', '" . $_POST['symbol'] . "');";
+				/*
+				Skąd apostrofy w zapytaniu SQLowym? Poniewaz w normalnych warunkach zapytanie wygladaloby tak:
+				$q1 = "INSERT INTO czytelnicy (imie, nazwisko, kod) VALUES ('Adrian', 'Zapała', '123');";
+				*/
 				$res1 = mysqli_query($conn, $q1);
 
 				echo "Dodano czytelnika " . $_POST['first_name'] . " " . $_POST['last_name'];
